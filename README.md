@@ -154,17 +154,17 @@ The analysis of the spawning migration phase of twaite shad tagged and tracked i
 
 6\. `smooth\_tracks.R`: Smooths duplicates and calculates residencies per shad per station. Therefore, it calls the following two functions:
 
-&#x09;+ 9a. `get\_nearest\_stations.R`: general function to extract the smoothed track for one shad (via its `transmitter ID`)
+&#x09;+ 6a. `get\_nearest\_stations.R`: general function to extract the smoothed track for one shad (via its `transmitter ID`)
 
-&#x09;+ 9b. `get\_timeline.R`: function to get the stations which are near a given station (where near means that the distance is smaller than a certain given limit, e.g. detection range).
+&#x09;+ 6b. `get\_timeline.R`: function to get the stations which are near a given station (where near means that the distance is smaller than a certain given limit, e.g. detection range).
 
 &#x09;	- --> Generate residency datasets per project and store them in `/interim/residencies`
 
 7\. `calculate\_speed.R`: Calculate movement speeds between consecutive detection stations. Also calculates swim distance, swim time, cumulative swim distance and station distance from source station.
 
-&#x09;+ 10a. `calculate\_speed\_function.R`: function to calculate speed between consecutive displacements; based on a function in Hugo Flavio's `actel` package
+&#x09;+ 7a. `calculate\_speed\_function.R`: function to calculate speed between consecutive displacements; based on a function in Hugo Flavio's `actel` package
 
-&#x09;+ 10b. `calculate\_sourcedistance\_function.R`: function to calculate the station distance from a 'source' station; based on a function in Hugo Flavio's `actel` package
+&#x09;+ 7b. `calculate\_sourcedistance\_function.R`: function to calculate the station distance from a 'source' station; based on a function in Hugo Flavio's `actel` package
 
 8\. `merge\_shad\_characteristics2.R`: Add shad meta data to the speed dataset
 
@@ -176,13 +176,13 @@ The analysis of the spawning migration phase of twaite shad tagged and tracked i
 
 12\. `flag\_tagging\_effect.R`: Identify tagging effect: the moment the shads are in the BPNS upon tagging and do not return to the Zeeschelde anymore during the first 40 days of tracking
 
-&#x09;+ 15a. `detect\_tagging\_effect.R`: Function to detect tagging effect
+&#x09;+ 12a. `detect\_tagging\_effect.R`: Function to detect tagging effect
 
 13\. `flag\_spawning\_migration.R`: Classify movement behaviours into upstream migration, spawning and downstream migration
 
-&#x09;+ 16a. `detect\_spawning\_migration\_functions\_speed\_method.R`: Functions to detect spawning migration based on speed and distance thresholds
+&#x09;+ 13a. `detect\_spawning\_migration\_functions\_speed\_method.R`: Functions to detect spawning migration based on speed and distance thresholds
 
-&#x09;+ 16b. `detect\_spawning\_migration\_functions\_first\_derivative\_smoother\_method.R`: Functions to detect spawning migration based on loess and GAM smoothers
+&#x09;+ 13b. `detect\_spawning\_migration\_functions\_first\_derivative\_smoother\_method.R`: Functions to detect spawning migration based on loess and GAM smoothers
 
 14\. `polish\_behaviour.R`: Because the method to flag spawning migration and migration is not 100% (likely impossible given the individual variability), this script manually classifies some parts of the tracks (e.g. end of upstream migration which should be spawning)
 
