@@ -42,14 +42,6 @@ The analysis of the spawning migration phase of twaite shad tagged and tracked i
 
 &#x09;+ `data\_with\_behaviour\_types.csv`: file with a column 'behaviour' containing all classified behaviours, i.e., tagging effect, foraging, upstream spawning migration, spawning and downstream spawning migration
 
-&#x09;+ `foraging\_detections.csv`: file with detections classified as foraging
-
-&#x09;+ `foraging\_detections\_with\_environmental\_data.csv`: file with detections classified as foraging including information about EUNIS habitat classification, presence of windmill farms, presence of shipping wrecks and presence of an aggregate excavation zone.
-
-&#x09;+ `foraging\_detections\_with\_environmental\_data\_and\_sea\_temp.csv`: file `foraging\_detections\_with\_environmental\_data.csv` including information on the daily sea surface temperature, obtained via Marine Copernicus
-
-&#x09;+ `fit\_bayes\_interactive.rds`: output of the dynamic Bayesian occupancy model with interaction between season and location
-
 
 
 \* `/external:`
@@ -85,18 +77,6 @@ The analysis of the spawning migration phase of twaite shad tagged and tracked i
 &#x09;+ `environmental\_variables/`:
 
 &#x09;	+ `westerschelde/`: csv datasets of environmental data in the Westerschelde obtained from the Rijkswaterstaat waterinfo server. For each environmental variable (temperature \[°C], conductivity \[mS/m], dissolved oxygen \[mg/l], waterlevel \[NAP]) a file, containg the values for each location in the Westerschelde
-
-&#x09;	+ `marine/`: datasets obtained from EMODnet about marine environments
-
-&#x09;		+ `aggregate\_extraction\_areas/`: polygons of where extraction of aggregate and substrate takes place
-
-&#x09;		+ `EUNIS\_habitats/`: polygons with habitat classification obtained from EMODnet
-
-&#x09;		+ `wind\_farms/`: polygons of where wind farms are planned, constructed and in production obtained from EMODnet
-
-&#x09;		+ `shipping\_wrecks/`: folder with csv file of shipping wreck positions obtained from EMODnet
-
-&#x09;		+ `sea\_temperature/`: folder with NC files of daily sea surface temperature obtained via Marine Copernicus
 
 &#x09;	+  `benedenschelde/:`
 
