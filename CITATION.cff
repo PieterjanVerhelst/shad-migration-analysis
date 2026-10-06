@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: 'To cite package "camtrapdp" in publications use:'
+message: 'To cite workflows from "shad-migration-analysis" in publications use:'
 type: software
 license: MIT
 authors:
@@ -9,11 +9,11 @@ authors:
   affiliation: Research Institute for Nature and Forest (INBO)
 - family-names: "Oldoni"
   given-names: "Damiano"
-  orcid: "https://orcid.org/"
+  orcid: "https://orcid.org/0000-0003-3445-7562"
   affiliation: Research Institute for Nature and Forest (INBO)
 title: "Shad Migration Analysis"
 version: 1.0.0
-doi: 10.5281/zenodo.1234
+doi: 10.5281/zenodo.22946374
 date-released: 2026-10-06
 contact:
 - family-names: "Verhelst"
