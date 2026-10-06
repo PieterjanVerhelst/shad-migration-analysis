@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: 'To cite package "camtrapdp" in publications use:'
+type: software
+license: MIT
+authors:
+- family-names: "Verhelst"
+  given-names: "Pieterjan"
+  orcid: "https://orcid.org/0000-0002-2610-6941"
+  affiliation: Research Institute for Nature and Forest (INBO)
+- family-names: "Oldoni"
+  given-names: "Damiano"
+  orcid: "https://orcid.org/"
+  affiliation: Research Institute for Nature and Forest (INBO)
+title: "Shad Migration Analysis"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2026-10-06
+contact:
+- family-names: "Verhelst"
+  given-names: "Pieterjan"
+  orcid: "https://orcid.org/0000-0002-2610-6941"
+  affiliation: Research Institute for Nature and Forest (INBO)
+repository-code: https://github.com/inbo/camtrapdp
+url: "https://github.com/PieterjanVerhelst/shad-migration-analysis"
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2026'
