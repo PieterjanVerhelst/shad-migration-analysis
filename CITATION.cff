@@ -23,13 +23,631 @@ contact:
 repository-code: https://github.com/inbo/camtrapdp
 url: "https://github.com/PieterjanVerhelst/shad-migration-analysis"
 references:
-- type: software
-  title: 'R: A Language and Environment for Statistical Computing'
-  notes: Depends
-  url: https://www.R-project.org/
-  authors:
-  - name: R Core Team
-  institution:
-    name: R Foundation for Statistical Computing
-    address: Vienna, Austria
-  year: '2026'
+  - type: software
+    title: 'R: A Language and Environment for Statistical Computing'
+    notes: Depends
+    url: https://www.R-project.org/
+    authors:
+    - name: R Core Team
+    institution:
+      name: R Foundation for Statistical Computing
+      address: Vienna, Austria
+    year: '2026'
+    
+  - type: software
+    title: tidyverse
+    abstract: 'Easily Install and Load the "Tidyverse"'
+    notes: Used via library(tidyverse)
+    url: https://tidyverse.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=tidyverse
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+    year: '2023'
+    doi: 10.32614/CRAN.package.tidyverse
+
+  - type: software
+    title: lubridate
+    abstract: 'Make Dealing with Dates a Little Easier'
+    notes: Used via library(lubridate)
+    url: https://lubridate.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=lubridate
+    authors:
+      - family-names: Spinu
+        given-names: Vitalie
+      - family-names: Grolemund
+        given-names: Garrett
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+    year: '2023'
+    doi: 10.32614/CRAN.package.lubridate
+
+  - type: software
+    title: devtools
+    abstract: 'Tools to Make Developing R Packages Easier'
+    notes: Used via install.packages("devtools")
+    url: https://devtools.r-lib.org/
+    repository: https://CRAN.R-project.org/package=devtools
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+      - family-names: Hester
+        given-names: Jim
+        orcid: https://orcid.org/0000-0002-2739-7082
+      - family-names: Chang
+        given-names: Winston
+        orcid: https://orcid.org/0000-0002-1576-2126
+      - family-names: Bryan
+        given-names: Jennifer
+        orcid: https://orcid.org/0000-0002-6983-2759
+    year: '2024'
+    doi: 10.32614/CRAN.package.devtools
+
+  - type: software
+    title: digest
+    abstract: 'Create Compact Hash Digests of R Objects'
+    notes: Used via install.packages("digest")
+    url: https://digest.r-lib.org/
+    repository: https://CRAN.R-project.org/package=digest
+    authors:
+      - family-names: Eddelbuettel
+        given-names: Dirk
+        orcid: https://orcid.org/0000-0001-6419-907X
+    year: '2023'
+    doi: 10.32614/CRAN.package.digest
+
+  - type: software
+    title: etn
+    abstract: 'Access Data from the European Tracking Network'
+    notes: Used via devtools::install_github("inbo/etn") and library(etn)
+    url: https://github.com/inbo/etn
+    repository: https://github.com/inbo/etn
+    authors:
+      - family-names: Huybrechts
+        given-names: Pieter
+        orcid: https://orcid.org/0000-0002-6658-6062
+        affiliation: Research Institute for Nature and Forest (INBO)
+      - family-names: Desmet
+        given-names: Peter
+        orcid: https://orcid.org/0000-0002-8442-8025
+        affiliation: Research Institute for Nature and Forest (INBO)
+      - family-names: Govaert
+        given-names: Sanne
+        orcid: https://orcid.org/0000-0002-8939-1305
+        affiliation: Research Institute for Nature and Forest (INBO)
+      - family-names: Oldoni
+        given-names: Damiano
+        orcid: https://orcid.org/0000-0003-3445-7562
+        affiliation: Research Institute for Nature and Forest (INBO)
+      - family-names: Van Hoey
+        given-names: Stijn
+        orcid: https://orcid.org/0000-0001-6413-3185
+    year: '2026'
+
+  - type: software
+    title: readr
+    abstract: 'Read Rectangular Text Data'
+    notes: Used via library(readr) and readr::parse_number
+    url: https://readr.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=readr
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+      - family-names: Hester
+        given-names: Jim
+        orcid: https://orcid.org/0000-0002-2739-7082
+      - family-names: Bryan
+        given-names: Jennifer
+        orcid: https://orcid.org/0000-0002-6983-2759
+    year: '2023'
+    doi: 10.32614/CRAN.package.readr
+
+  - type: software
+    title: assertthat
+    abstract: 'Easy pre and post assertions'
+    notes: Used via library(assertthat) and assertthat::assert_that
+    url: https://assertthat.r-lib.org/
+    repository: https://CRAN.R-project.org/package=assertthat
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+    year: '2023'
+    doi: 10.32614/CRAN.package.assertthat
+
+  - type: software
+    title: magrittr
+    abstract: 'A Forward-Pipe Operator for R'
+    notes: Used via library(magrittr) and %>%
+    url: https://magrittr.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=magrittr
+    authors:
+      - family-names: Bache
+        given-names: Stefan Milton
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+      - family-names: Henry
+        given-names: Lionel
+    year: '2023'
+    doi: 10.32614/CRAN.package.magrittr
+
+  - type: software
+    title: dplyr
+    abstract: 'A Grammar of Data Manipulation'
+    notes: Used via library(dplyr) and `dplyr::` function calls
+    url: https://dplyr.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=dplyr
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+      - family-names: François
+        given-names: Romain
+        orcid: https://orcid.org/0000-0002-2444-4226
+      - family-names: Henry
+        given-names: Lionel
+      - family-names: Müller
+        given-names: Kirill
+        orcid: https://orcid.org/0000-0002-1416-3412
+      - family-names: Vaughan
+        given-names: Davis
+        orcid: https://orcid.org/0000-0003-4777-038X
+    year: '2023'
+    doi: 10.32614/CRAN.package.dplyr
+
+  - type: software
+    title: tibble
+    abstract: 'Simple Data Frames'
+    notes: Used via library(tibble)
+    url: https://tibble.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=tibble
+    authors:
+      - family-names: Müller
+        given-names: Kirill
+        orcid: https://orcid.org/0000-0002-1416-3412
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+      - family-names: Francois
+        given-names: Romain
+      - family-names: Bryan
+        given-names: Jennifer
+        orcid: https://orcid.org/0000-0002-6983-2759
+    year: '2023'
+    doi: 10.32614/CRAN.package.tibble
+
+  - type: software
+    title: purrr
+    abstract: 'Functional Programming Tools'
+    notes: Used via library(purrr) and purrr::map
+    url: https://purrr.tidyverse.org/
+    repository: https://CRAN.R-project.org/package=purrr
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+      - family-names: Henry
+        given-names: Lionel
+    year: '2023'
+    doi: 10.32614/CRAN.package.purrr
+
+  - type: software
+    title: suncalc
+    abstract: 'Compute Sun Position, Sunlight Phases, Moon Position and Lunar Phase'
+    notes: Used via library(suncalc)
+    url: https://github.com/datastorm-open/suncalc
+    repository: https://CRAN.R-project.org/package=suncalc
+    authors:
+      - family-names: Thieurmel
+        given-names: Benoit
+      - family-names: Elmarhraoui
+        given-names: Achraf
+    year: '2026'
+
+  - type: software
+    title: nlme
+    abstract: 'Linear and Nonlinear Mixed Effects Models'
+    notes: Used via library(nlme)
+    url: https://svn.r-project.org/R-packages/trunk/nlme/
+    repository: https://CRAN.R-project.org/package=nlme
+    authors:
+      - family-names: Pinheiro
+        given-names: José
+      - family-names: Bates
+        given-names: Douglas
+      - family-names: DebRoy
+        given-names: Saikat
+      - family-names: Sarkar
+        given-names: Deepayan
+      - name: R Core Team
+    year: '2026'
+
+  - type: software
+    title: lme4
+    abstract: 'Linear Mixed-Effects Models using Eigen and S4'
+    notes: Used via library(lme4)
+    url: https://lme4.github.io/lme4/
+    repository: https://CRAN.R-project.org/package=lme4
+    authors:
+      - family-names: Bates
+        given-names: Douglas
+        orcid: https://orcid.org/0000-0001-8316-9503
+      - family-names: Maechler
+        given-names: Martin
+        orcid: https://orcid.org/0000-0002-8685-9910
+      - family-names: Bolker
+        given-names: Ben
+        orcid: https://orcid.org/0000-0002-2127-0443
+      - family-names: Walker
+        given-names: Steven
+        orcid: https://orcid.org/0000-0002-4394-9078
+      - family-names: Ly
+        given-names: Anna
+        orcid: https://orcid.org/0000-0002-0210-0342
+      - family-names: Jagan
+        given-names: Mikael
+        orcid: https://orcid.org/0000-0002-3542-2938
+    year: '2026'
+
+  - type: software
+    title: lmerTest
+    abstract: 'Tests in Linear Mixed Effects Models'
+    notes: Used via library(lmerTest)
+    url: https://github.com/runehaubo/lmerTestR
+    repository: https://CRAN.R-project.org/package=lmerTest
+    authors:
+      - family-names: Kuznetsova
+        given-names: Alexandra
+      - family-names: Bruun Brockhoff
+        given-names: Per
+      - family-names: Haubo Bojesen Christensen
+        given-names: Rune
+        orcid: https://orcid.org/0000-0002-4494-3399
+    year: '2026'
+
+  - type: software
+    title: MASS
+    abstract: 'Support Functions and Datasets for Venables and Ripley''s MASS'
+    notes: Used via library(MASS)
+    url: http://www.stats.ox.ac.uk/pub/MASS4/
+    repository: https://CRAN.R-project.org/package=MASS
+    authors:
+      - family-names: Ripley
+        given-names: Brian
+      - family-names: Venables
+        given-names: Bill
+      - family-names: Bates
+        given-names: Douglas
+        orcid: https://orcid.org/0000-0001-8316-9503
+      - family-names: Hornik
+        given-names: Kurt
+      - family-names: Gebhardt
+        given-names: Albrecht
+      - family-names: Firth
+        given-names: David
+    year: '2026'
+
+  - type: software
+    title: car
+    abstract: 'Companion to Applied Regression'
+    notes: Used via library(car)
+    url: https://CRAN.R-project.org/package=car
+    repository: https://CRAN.R-project.org/package=car
+    authors:
+      - family-names: Fox
+        given-names: John
+      - family-names: Weisberg
+        given-names: Sanford
+      - family-names: Price
+        given-names: Brad
+    year: '2026'
+
+  - type: software
+    title: performance
+    abstract: 'Assessment of Regression Models Performance'
+    notes: Used via library(performance)
+    url: https://easystats.github.io/performance/
+    repository: https://CRAN.R-project.org/package=performance
+    authors:
+      - family-names: Lüdecke
+        given-names: Daniel
+        orcid: https://orcid.org/0000-0002-8895-3206
+      - family-names: Makowski
+        given-names: Dominique
+        orcid: https://orcid.org/0000-0001-5375-9967
+      - family-names: Ben-Shachar
+        given-names: Mattan S.
+        orcid: https://orcid.org/0000-0002-4287-4801
+      - family-names: Patil
+        given-names: Indrajeet
+        orcid: https://orcid.org/0000-0003-1995-6531
+      - family-names: Waggoner
+        given-names: Philip
+        orcid: https://orcid.org/0000-0002-7825-7573
+      - family-names: Wiernik
+        given-names: Brenton M.
+        orcid: https://orcid.org/0000-0001-9560-6336
+      - family-names: Thériault
+        given-names: Rémi
+        orcid: https://orcid.org/0000-0003-4315-6788
+      - family-names: Arel-Bundock
+        given-names: Vincent
+        orcid: https://orcid.org/0000-0003-2042-7063
+      - family-names: Bacher
+        given-names: Etienne
+        orcid: https://orcid.org/0000-0002-9271-5075
+      - family-names: Luchman
+        given-names: Joseph
+        orcid: https://orcid.org/0000-0002-8886-9717
+      - family-names: Bogomolovas
+        given-names: Julius
+        orcid: https://orcid.org/0000-0001-8344-1909
+    year: '2026'
+    doi: 10.21105/joss.03139
+
+  - type: software
+    title: MuMIn
+    abstract: 'Multi-Model Inference'
+    notes: Used via library(MuMIn)
+    url: https://cran.r-project.org/package=MuMIn
+    repository: https://CRAN.R-project.org/package=MuMIn
+    authors:
+      - family-names: Bartoń
+        given-names: Kamil
+        orcid: https://orcid.org/0000-0001-5562-8274
+    year: '2026'
+
+  - type: software
+    title: sandwich
+    abstract: 'Robust Covariance Matrix Estimators'
+    notes: Used via library(sandwich)
+    url: https://zeileis.codeberg.page/sandwich/
+    repository: https://CRAN.R-project.org/package=sandwich
+    authors:
+      - family-names: Zeileis
+        given-names: Achim
+        orcid: https://orcid.org/0000-0003-0918-3766
+      - family-names: Lumley
+        given-names: Thomas
+        orcid: https://orcid.org/0000-0003-4255-5437
+      - family-names: Graham
+        given-names: Nathaniel
+        orcid: https://orcid.org/0009-0002-1215-5256
+      - family-names: Koell
+        given-names: Susanne
+    year: '2026'
+    doi: 10.18637/jss.v095.i01
+
+  - type: software
+    title: lmtest
+    abstract: 'Testing Linear Regression Models'
+    notes: Used via library(lmtest)
+    url: https://cran.r-project.org/package=lmtest
+    repository: https://CRAN.R-project.org/package=lmtest
+    authors:
+      - family-names: Hothorn
+        given-names: Torsten
+        orcid: https://orcid.org/0000-0001-8301-0471
+      - family-names: Zeileis
+        given-names: Achim
+        orcid: https://orcid.org/0000-0003-0918-3766
+      - family-names: Farebrother
+        given-names: Richard W.
+      - family-names: Cummins
+        given-names: Clint
+    year: '2022'
+
+  - type: software
+    title: sjPlot
+    abstract: 'Data Visualization for Statistics in Social Science'
+    notes: Used via library(sjPlot)
+    url: https://strengejacke.github.io/sjPlot/
+    repository: https://CRAN.R-project.org/package=sjPlot
+    authors:
+      - family-names: Lüdecke
+        given-names: Daniel
+        orcid: https://orcid.org/0000-0002-8895-3206
+      - family-names: Bartel
+        given-names: Alexander
+        orcid: https://orcid.org/0000-0002-1280-6138
+      - family-names: Schwemmer
+        given-names: Carsten
+      - family-names: Powell
+        given-names: Chuck
+        orcid: https://orcid.org/0000-0002-3606-2188
+      - family-names: Djalovski
+        given-names: Amir
+      - family-names: Titz
+        given-names: Johannes
+        orcid: https://orcid.org/0000-0002-1102-5719
+    year: '2025'
+    doi: 10.32614/CRAN.package.sjPlot
+
+  - type: software
+    title: interactions
+    abstract: 'Comprehensive, User-Friendly Toolkit for Probing Interactions'
+    notes: Used via library(interactions)
+    url: https://interactions.jacob-long.com
+    repository: https://CRAN.R-project.org/package=interactions
+    authors:
+      - family-names: Long
+        given-names: Jacob A.
+        orcid: https://orcid.org/0000-0002-1582-6214
+    year: '2024'
+
+  - type: software
+    title: effects
+    abstract: 'Effect Displays for Linear, Generalized Linear, and Other Models'
+    notes: Used via library(effects)
+    url: https://cran.r-project.org/package=effects
+    repository: https://CRAN.R-project.org/package=effects
+    authors:
+      - family-names: Fox
+        given-names: John
+      - family-names: Weisberg
+        given-names: Sanford
+      - family-names: Price
+        given-names: Brad
+      - family-names: Friendly
+        given-names: Michael
+      - family-names: Hong
+        given-names: Jangman
+    year: '2026'
+
+  - type: software
+    title: sf
+    abstract: 'Simple Features for R'
+    notes: Used via library(sf)
+    url: https://r-spatial.github.io/sf/
+    repository: https://CRAN.R-project.org/package=sf
+    authors:
+      - family-names: Pebesma
+        given-names: Edzer
+        orcid: https://orcid.org/0000-0001-8049-7069
+      - family-names: Bivand
+        given-names: Roger
+        orcid: https://orcid.org/0000-0003-2392-6140
+      - family-names: Racine
+        given-names: Etienne
+      - family-names: Sumner
+        given-names: Michael
+      - family-names: Cook
+        given-names: Ian
+      - family-names: Keitt
+        given-names: Tim
+      - family-names: Lovelace
+        given-names: Robin
+      - family-names: Wickham
+        given-names: Hadley
+      - family-names: Ooms
+        given-names: Jeroen
+        orcid: https://orcid.org/0000-0002-4035-0289
+      - family-names: Müller
+        given-names: Kirill
+      - family-names: Pedersen
+        given-names: Thomas Lin
+      - family-names: Baston
+        given-names: Dan
+      - family-names: Dunnington
+        given-names: Dewey
+        orcid: https://orcid.org/0000-0002-9415-4582
+      - family-names: Courtiol
+        given-names: Alexandre
+        orcid: https://orcid.org/0000-0003-0637-2959
+    year: '2026'
+
+  - type: software
+    title: tmap
+    abstract: 'Thematic Maps'
+    notes: Used via library(tmap)
+    url: https://r-tmap.github.io/tmap/
+    repository: https://CRAN.R-project.org/package=tmap
+    authors:
+      - family-names: Tennekes
+        given-names: Martijn
+    year: '2026'
+
+  - type: software
+    title: tidyquant
+    abstract: 'Tidy Quantitative Financial Analysis'
+    notes: Used via library(tidyquant)
+    url: https://business-science.github.io/tidyquant/
+    repository: https://CRAN.R-project.org/package=tidyquant
+    authors:
+      - family-names: Dancho
+        given-names: Matt
+      - family-names: Vaughan
+        given-names: Davis
+        orcid: https://orcid.org/0000-0003-4777-038X
+    year: '2026'
+
+  - type: software
+    title: actel
+    abstract: 'Acoustic Telemetry Data Analysis'
+    notes: Used via library(actel)
+    url: https://github.com/hugomflavio/actel
+    repository: https://github.com/hugomflavio/actel
+    authors:
+      - family-names: Flávio
+        given-names: Hugo
+        orcid: https://orcid.org/0000-0002-5174-1197
+      - family-names: Smith
+        given-names: Devon
+        orcid: https://orcid.org/0009-0005-3954-6355
+    year: '2026'
+
+  - type: software
+    title: here
+    abstract: 'A Simpler Way to Find Your Files'
+    notes: Used via library(here) and here()
+    url: https://here.r-lib.org/
+    repository: https://CRAN.R-project.org/package=here
+    authors:
+      - family-names: Müller
+        given-names: Kirill
+        orcid: https://orcid.org/0000-0002-1416-3412
+      - family-names: Bryan
+        given-names: Jennifer
+        orcid: https://orcid.org/0000-0002-6983-2759
+    year: '2025'
+
+  - type: software
+    title: plyr
+    abstract: 'Tools for Splitting, Applying and Combining Data'
+    notes: Used via plyr::ldply
+    url: https://www.plyr.org/
+    repository: https://CRAN.R-project.org/package=plyr
+    authors:
+      - family-names: Wickham
+        given-names: Hadley
+        orcid: https://orcid.org/0000-0003-4757-117X
+    year: '2023'
+    doi: 10.32614/CRAN.package.plyr
+
+  - type: software
+    title: zoo
+    abstract: 'S3 Infrastructure for Regular and Irregular Time Series (Z''s Ordered Observations)'
+    notes: Used via `zoo::na.locf`
+    url: https://zeileis.codeberg.page/zoo/
+    repository: https://CRAN.R-project.org/package=zoo
+    authors:
+      - family-names: Zeileis
+        given-names: Achim
+        orcid: https://orcid.org/0000-0003-0918-3766
+      - family-names: Grothendieck
+        given-names: Gabor
+      - family-names: Ryan
+        given-names: Jeffrey A.
+    year: '2026'
+
+  - type: software
+    title: plotly
+    abstract: "Create interactive web graphics via 'plotly.js'"
+    notes: Used via plotly::plotly_build
+    url: https://plotly-r.com
+    repository: https://CRAN.R-project.org/package=plotly
+    authors:
+      - family-names: Sievert
+        given-names: Carson
+        orcid: https://orcid.org/0000-0002-4958-2844
+      - family-names: Parmer
+        given-names: Chris
+      - family-names: Hocking
+        given-names: Toby
+      - family-names: Chamberlain
+        given-names: Scott
+      - family-names: Ram
+        given-names: Karthik
+      - family-names: Corvellec
+        given-names: Marianne
+        orcid: https://orcid.org/0000-0002-1994-3581
+      - family-names: Despouy
+        given-names: Pedro
+      - family-names: Brüggemann
+        given-names: Salim
+        orcid: https://orcid.org/0000-0002-5329-5987
+    year: '2026'
