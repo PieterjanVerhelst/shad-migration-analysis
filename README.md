@@ -1,5 +1,11 @@
 # shad-migration-analysis
 
+<!-- badges: start -->
+[![repo
+status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22946374.svg)](https://doi.org/10.5281/zenodo.22946374)
+<!-- badges: end -->
+
 The analysis of the spawning migration phase of twaite shad tagged and tracked in the Schelde Estuary.
 
 
